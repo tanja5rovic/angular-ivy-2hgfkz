@@ -1,0 +1,7 @@
+<h1>Songs:</h1>
+
+<ul>
+  <li *ngFor="let song of songService.songs" (click)="chooseSong(song)">
+    {{ song.title }} - {{ song.author }}
+  </li>
+</ul>
